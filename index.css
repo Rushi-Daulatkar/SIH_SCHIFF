@@ -1,0 +1,121 @@
+body {
+  background-image: url('./BG.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-x: hidden; 
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Increased gap between elements */
+  padding: 2.2em; /* Increased padding */
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px; /* Increased border-radius */
+  max-width: 1000px; /* Increased max-width */
+  margin: 0 auto; 
+  margin-top: 5.5%;
+}
+
+#heading {
+  text-align: center;
+  font-weight: 700;
+  margin: 1.2em 0; /* Increased margin */
+  color: #1a1dce70;
+  font-size: 2.5em; /* Increased font-size */
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 0.8em; /* Increased gap between icon and input */
+  border-radius: 25px;
+  padding: 1em; /* Increased padding */
+  border: none;
+  background-color: rgba(205, 5, 255, 0.219);
+  box-shadow: inset 2px 5px 10px rgba(5, 5, 5, 0.5); 
+}
+
+.input-icon {
+  height: 1.8em; /* Increased icon size */
+  width: 1.8em; /* Increased icon size */
+  fill: white;
+  cursor: pointer;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: black; /* Set text color to black */
+  font-size: 1.5em; /* Adjust font size if needed */
+}
+
+.form .btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em; /* Increased margin */
+}
+
+.button1,
+.button2,
+.button3 {
+  flex: 1;
+  padding: 0.8em; /* Increased padding */
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #252525;
+  color: white;
+}
+
+.button1 {
+  margin-right: 0.5em;
+}
+
+.button1:hover {
+  background-color: green;
+}
+
+.button2:hover {
+  background-color: #e0a800;
+}
+
+.button3 {
+  margin-top: 2.5em; /* Increased margin */
+}
+
+.button3:hover {
+  background-color: red;
+}
+
+.navbar.bg-whitetish {
+  background-color: rgba(255, 255, 255, 0.1); /* Match login block color */
+}
+
+@media only screen and (max-width: 400px) {
+  .form {
+    width: 100%;
+  }
+
+  .btn {
+    flex-direction: column;
+  }
+
+  .button1,
+  .button2,
+  .button3 {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
