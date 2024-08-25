@@ -110,7 +110,7 @@ button {
   z-index: 1;
   background-color: white;
   border-bottom: 1px solid #ddd;
-  position: relative; /* To ensure proper alignment */
+  position: relative;
 }
 
 .bg-whitetish {
